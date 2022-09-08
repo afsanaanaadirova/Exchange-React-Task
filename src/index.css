@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+:root {
+  --primary-hue: 210;
+  --gray-hue: 240;
+  --color-primary: #0e57d6;
+  --color-primary-variant: #000000;
+}
+/* GENERAL STYLES */
+body {
+  color: var(--color-primary-variant);
+  line-height: 1.7;
+  overflow-x: hidden;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+.container {
+  width: var(--container-width-lg);
+  max-width: 1920px;
+  margin-inline: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+  color: var(--color-gray-100);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+}
+.main__form {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+select {
+  background: #ffffff;
+  box-shadow: 3px 3px 10px rgba(14, 87, 214, 0.26);
+  border-radius: 20px;
+  border: unset;
+  padding: 9px;
+  text-align: center;
+  width: 311px;
+}
+.main__form-second {
+  background: #ffffff;
+  box-shadow: 1px 1px 6px rgba(14, 87, 214, 0.26);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 12px 34px;
+}
+.main__form-second h6 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  padding-bottom: 14px;
+}
+.input-groups input {
+  background: #f2f2f2;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 11px;
+  border: unset;
+}
+.input-groups input:nth-child(2) {
+  background-color: unset;
+}
+.input-groups {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+}
+.main__items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.main__items .item {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  box-shadow: 1px 1px 4px rgba(14, 87, 214, 0.26);
+  border-radius: 20px;
+  padding: 10px 26px;
+}
+.main__items .item-left {
+  display: flex;
+}
+.item-icon {
+  padding-right: 18px;
+  color: var(--color-primary);
+}
+.exchange-icon {
+  color: var(--color-primary);
+}
